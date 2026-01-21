@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Men Kapde – Kapdewala</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f4f6fb}
+
+/* HEADER */
+header{
+  background:#0d6efd;
+  color:#fff;
+  padding:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{font-size:20px;font-weight:bold}
+.logo span{color:#ff9800}
+
+/* FILTER BAR */
+.filter{
+  display:flex;
+  justify-content:space-around;
+  background:#fff;
+  padding:8px 0;
+  font-size:13px;
+}
+.filter div{
+  padding:6px 10px;
+  border-radius:6px;
+  background:#f0f0f0;
+}
+
+/* PRODUCTS */
+.products{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  padding:12px;
+}
+.card{
+  background:#fff;
+  border-radius:12px;
+  padding:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+.card img{
+  width:100%;
+  border-radius:10px;
+}
+.card h4{font-size:14px;margin:6px 0}
+.price{
+  color:#ff5722;
+  font-weight:bold;
+}
+.old{
+  font-size:11px;
+  color:#777;
+  text-decoration:line-through;
+}
+.cod{
+  font-size:11px;
+  color:green;
+}
+button{
+  width:100%;
+  margin-top:6px;
+  padding:7px;
+  background:#0d6efd;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+}
+
+/* BOTTOM NAV */
+.bottom{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#fff;
+  display:flex;
+  justify-content:space-around;
+  border-top:1px solid #ddd;
+  padding:6px 0;
+  font-size:12px;
+}
+.bottom div{text-align:center;cursor:pointer}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Kapde<span>wala</span></div>
+  <div>Men Kapde</div>
+</header>
+
+<div class="filter">
+  <div>👕 Shirt</div>
+  <div>👖 Jeans</div>
+  <div>🧥 T-Shirt</div>
+  <div>⬇ Price</div>
+</div>
+
+<div class="products">
+
+  <div class="card">
+    <img src="https://i.imgur.com/tfU9KQk.jpg">
+    <h4>Men Casual Shirt</h4>
+    <div class="price">₹399 <span class="old">₹999</span></div>
+    <div class="cod">✔ Cash on Delivery</div>
+    <button onclick="openProduct()">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/8nQxj2P.jpg">
+    <h4>Men Printed T-Shirt</h4>
+    <div class="price">₹299 <span class="old">₹699</span></div>
+    <div class="cod">✔ Cash on Delivery</div>
+    <button onclick="openProduct()">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/z8F9qQp.jpg">
+    <h4>Men Denim Jeans</h4>
+    <div class="price">₹599 <span class="old">₹1499</span></div>
+    <div class="cod">✔ Cash on Delivery</div>
+    <button onclick="openProduct()">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/2nCt3S3.jpg">
+    <h4>Men Full Sleeve Shirt</h4>
+    <div class="price">₹449 <span class="old">₹1099</span></div>
+    <div class="cod">✔ Cash on Delivery</div>
+    <button onclick="openProduct()">Buy Now</button>
+  </div>
+
+</div>
+
+<div style="height:70px"></div>
+
+<div class="bottom">
+  <div onclick="go('index.html')">🏠<br>Home</div>
+  <div onclick="go('men.html')">👕<br>Men</div>
+  <div onclick="go('women.html')">👗<br>Women</div>
+  <div onclick="go('cart.html')">🛒<br>Cart</div>
+  <div onclick="go('login.html')">👤<br>Account</div>
+</div>
+
+<script src="auth.js"></script>
+
+
+<a href="https://wa.me/919876543210?text=Namaste%20Kapdewala%20🙏%0AMujhe%20order%20karna%20hai"
+   class="wa-btn" target="_blank">
+  💬 Order on WhatsApp
+</a>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>Login – Kapdewala</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="auth.js"></script>
+<style>
+body{font-family:Arial;background:#f4f6fb}
+.box{background:#fff;margin:40px;padding:20px;border-radius:10px}
+input,button{width:100%;padding:10px;margin-top:10px}
+button{background:#ff5722;color:#fff;border:none}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h3>Mobile Number se Login</h3>
+
+  <input id="mobile" type="tel" placeholder="10 digit mobile">
+
+  <button onclick="sendOTP()">Send OTP</button>
+
+  <div id="otpBox" style="display:none">
+    <input id="otpInput" placeholder="Enter OTP">
+    <button onclick="verifyOTP()">Verify & Login</button>
+    <small>Demo OTP: 1234</small>
+  </div>
+</div>
+
+</body>
+</html>

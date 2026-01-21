@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapdewala – Sasti Dukan Online</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f4f6fb}
+
+/* HEADER */
+header{
+  background:#0d6efd;
+  color:#fff;
+  padding:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{font-size:20px;font-weight:bold}
+.logo span{color:#ff9800}
+.search input{
+  width:160px;
+  padding:6px;
+  border:none;
+  border-radius:5px;
+}
+
+/* BANNER */
+.banner{
+  background:linear-gradient(135deg,#ff9800,#ff5722);
+  color:#fff;
+  padding:18px;
+}
+.banner h2{font-size:20px}
+.banner p{font-size:13px;margin-top:5px}
+
+/* TRUST BAR */
+.trust{
+  display:flex;
+  justify-content:space-around;
+  background:#fff;
+  padding:8px 0;
+  font-size:11px;
+}
+
+/* CATEGORY */
+.categories{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  padding:12px;
+}
+.cat{
+  background:#fff;
+  border-radius:12px;
+  padding:15px;
+  text-align:center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  cursor:pointer;
+}
+.cat img{width:80px}
+.cat h4{margin-top:8px}
+
+/* PRODUCTS */
+.title{
+  padding:10px;
+  font-weight:bold;
+}
+.products{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  padding:10px;
+}
+.card{
+  background:#fff;
+  border-radius:12px;
+  padding:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+.card img{width:100%;border-radius:10px}
+.price{color:#ff5722;font-weight:bold}
+.old{font-size:11px;text-decoration:line-through;color:#777}
+.cod{
+  font-size:11px;
+  color:green;
+}
+.card button{
+  width:100%;
+  margin-top:6px;
+  padding:6px;
+  background:#0d6efd;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+}
+
+/* BOTTOM NAV */
+.bottom{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#fff;
+  display:flex;
+  justify-content:space-around;
+  border-top:1px solid #ddd;
+  padding:6px 0;
+  font-size:12px;
+}
+.bottom div{text-align:center;cursor:pointer}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Kapde<span>wala</span></div>
+  <div class="search">
+    <input placeholder="Search kapde...">
+  </div>
+</header>
+
+<div class="banner">
+  <h2>UP • Bihar ki Sasti Online Dukan</h2>
+  <p>Men & Women Kapde – Cash on Delivery Available</p>
+</div>
+
+<div class="trust">
+  <div>🚚 All India Delivery</div>
+  <div>💰 COD</div>
+  <div>✅ Trusted</div>
+</div>
+
+<div class="categories">
+  <div class="cat" onclick="go('men.html')">
+    <img src="https://i.imgur.com/1Xq6FzY.png">
+    <h4>Men Kapde</h4>
+    <p>Shirt, Jeans</p>
+  </div>
+  <div class="cat" onclick="go('women.html')">
+    <img src="https://i.imgur.com/1N4K5QG.png">
+    <h4>Women Kapde</h4>
+    <p>Suit, Saree</p>
+  </div>
+</div>
+
+<div class="title">🔥 Aaj ke Saste Deals</div>
+
+<div class="products">
+  <div class="card">
+    <img src="https://i.imgur.com/tfU9KQk.jpg">
+    <h4>Men Casual Shirt</h4>
+    <div class="price">₹399 <span class="old">₹999</span></div>
+    <div class="cod">✔ Cash on Delivery</div>
+    <button onclick="alert('Product Page')">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/6XGQKcG.jpg">
+    <h4>Women Kurti</h4>
+    <div class="price">₹499 <span class="old">₹1199</span></div>
+    <div class="cod">✔ Cash on Delivery</div>
+    <button onclick="alert('Product Page')" >Buy Now</button>
+  </div>
+</div>
+
+<div style="height:70px"></div>
+
+<div class="bottom">
+  <div onclick="go('index.html')">🏠<br>Home</div>
+  <div onclick="go('men.html')">👕<br>Men</div>
+  <div onclick="go('women.html')">👗<br>Women</div>
+  <div onclick="go('cart.html')">🛒<br>Cart</div>
+  <div onclick="go('login.html')">👤<br>Account</div>
+</div>
+
+
+<script src="auth.js"></script>
+
+
+
+<a href="https://wa.me/919876543210?text=Namaste%20Kapdewala%20🙏%0AMujhe%20order%20karna%20hai"
+   class="wa-btn" target="_blank">
+  💬 Order on WhatsApp
+</a>
+
+</body>
+</html>
